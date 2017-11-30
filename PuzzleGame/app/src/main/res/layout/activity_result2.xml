@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bBackMenu"
+            style="@style/bSettingStyle"
+            android:background="@drawable/back"
+            android:contentDescription="@string/button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultHeaher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/score9"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textScore15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/Padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/move"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blacklight">
+
+                <TextView
+                    android:id="@+id/col_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/col_move"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontSize"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/col_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
